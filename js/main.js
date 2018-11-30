@@ -2,7 +2,8 @@ $(document).ready(function(){$(".burger_icon").click(function(){$("header nav").
 
 const loadStyleSheet=(src)=>{if(document.createStyleSheet){document.createStyleSheet(src);}else {const stylesheet = document.createElement('link');stylesheet.href = src;stylesheet.rel = 'stylesheet';stylesheet.type = 'text/css';document.getElementsByTagName('head')[0].appendChild(stylesheet);}}
 // All of the objects are in the DOM, and all the images, scripts, links have finished loading.
-window.onload = function () {console.log('window done!')loadStyleSheet('css/owl.transitions.css');loadStyleSheet('css/owl.carousel.css');loadStyleSheet('css/owl.theme.css');};
+window.onload = function () {console.log('window done!')
+loadStyleSheet('css/owl.transitions.css');loadStyleSheet('css/owl.carousel.css');loadStyleSheet('css/owl.theme.css');};
 //owl.carousel.min.js
 "function"!==typeof Object.create&&(Object.create=function(f){function g(){}g.prototype=f;return new g});
 (function(f,g,k){var l={init:function(a,b){this.$elem=f(b);this.options=f.extend({},f.fn.owlCarousel.options,this.$elem.data(),a);this.userOptions=a;this.loadContent()},loadContent:function(){function a(a){var d,e="";if("function"===typeof b.options.jsonSuccess)b.options.jsonSuccess.apply(this,[a]);else{for(d in a.owl)a.owl.hasOwnProperty(d)&&(e+=a.owl[d].item);b.$elem.html(e)}b.logIn()}var b=this,e;"function"===typeof b.options.beforeInit&&b.options.beforeInit.apply(this,[b.$elem]);"string"===typeof b.options.jsonPath?
